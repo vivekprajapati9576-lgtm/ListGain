@@ -1,0 +1,179 @@
+import { AllotmentResult, DashboardMetrics, Ipo, NotificationPreference } from '../types';
+
+export const ipoList: Ipo[] = [
+  {
+    id: '1',
+    companyName: 'AstraWave Renewables',
+    symbol: 'ASTRA',
+    openDate: '2026-03-25',
+    closeDate: '2026-03-27',
+    listingDate: '2026-04-02',
+    priceBand: '₹380 - ₹401',
+    lotSize: 37,
+    issueSize: '₹1,240 Cr',
+    subscriptionStatus: 'Opens in 3 days',
+    status: 'Upcoming',
+    gmp: 122,
+    gmpTrend: 'up',
+    estimatedListingPrice: 523,
+    overview: 'A renewable EPC and solar storage platform with utility-scale projects across India.',
+    strengths: ['Strong order book across 11 states', 'Healthy EBITDA expansion', 'Promoter stake remains above 68%'],
+    risks: ['Execution delay risk on utility projects', 'Working capital intensive business'],
+    financials: {
+      revenue: '₹2,840 Cr',
+      profit: '₹284 Cr',
+      debtToEquity: '0.42'
+    },
+    drhpSummary: 'Fresh issue for capacity expansion, battery manufacturing line, and debt repayment.',
+    recommendation: 'Subscribe',
+    sectors: ['Renewables', 'Energy Storage'],
+    subscriptionBreakup: { retail: 0, qib: 0, nii: 0 }
+  },
+  {
+    id: '2',
+    companyName: 'FinSutra Tech',
+    symbol: 'FINSUT',
+    openDate: '2026-03-20',
+    closeDate: '2026-03-24',
+    listingDate: '2026-03-31',
+    priceBand: '₹210 - ₹221',
+    lotSize: 67,
+    issueSize: '₹860 Cr',
+    subscriptionStatus: 'Retail 12.2x · QIB 18.4x · NII 26.1x',
+    status: 'Open',
+    gmp: 87,
+    gmpTrend: 'up',
+    estimatedListingPrice: 308,
+    overview: 'B2B fintech infrastructure provider serving NBFCs, lenders, and embedded finance startups.',
+    strengths: ['High ROE and recurring SaaS revenue', 'Low churn enterprise clients'],
+    risks: ['Fintech regulation changes can impact growth', 'Customer concentration in top five clients'],
+    financials: {
+      revenue: '₹1,120 Cr',
+      profit: '₹168 Cr',
+      debtToEquity: '0.08'
+    },
+    drhpSummary: 'Offer for sale plus fresh issue to fund product expansion and inorganic acquisitions.',
+    recommendation: 'Subscribe',
+    sectors: ['Fintech', 'SaaS'],
+    subscriptionBreakup: { retail: 12.2, qib: 18.4, nii: 26.1 }
+  },
+  {
+    id: '3',
+    companyName: 'UrbanCart Retail',
+    symbol: 'UCART',
+    openDate: '2026-03-18',
+    closeDate: '2026-03-20',
+    listingDate: '2026-03-27',
+    priceBand: '₹115 - ₹120',
+    lotSize: 125,
+    issueSize: '₹540 Cr',
+    subscriptionStatus: 'Awaiting allotment',
+    status: 'Closed',
+    gmp: 19,
+    gmpTrend: 'down',
+    estimatedListingPrice: 139,
+    overview: 'Value retail chain with presence in tier-2 and tier-3 Indian cities.',
+    strengths: ['Strong same-store sales growth', 'Asset-light expansion model'],
+    risks: ['Low margins in value retail', 'Competitive pressure from quick-commerce players'],
+    financials: {
+      revenue: '₹1,980 Cr',
+      profit: '₹73 Cr',
+      debtToEquity: '0.64'
+    },
+    drhpSummary: 'Primarily fresh issue for new stores, warehousing, and general corporate purposes.',
+    recommendation: 'Neutral',
+    sectors: ['Retail'],
+    subscriptionBreakup: { retail: 5.8, qib: 7.9, nii: 3.2 }
+  },
+  {
+    id: '4',
+    companyName: 'Mediva Diagnostics',
+    symbol: 'MEDIVA',
+    openDate: '2026-03-01',
+    closeDate: '2026-03-05',
+    listingDate: '2026-03-12',
+    priceBand: '₹255 - ₹270',
+    lotSize: 55,
+    issueSize: '₹1,520 Cr',
+    subscriptionStatus: 'Listed at ₹322',
+    status: 'Listed',
+    gmp: 0,
+    gmpTrend: 'flat',
+    estimatedListingPrice: 322,
+    currentPrice: 348,
+    listingGainPercent: 28.89,
+    overview: 'Diagnostics network focused on pathology, genomics, and preventive health programs.',
+    strengths: ['Pan-India footprint', 'Premium preventive care brand'],
+    risks: ['Expansion CAPEX can suppress margins', 'Pricing pressure in metros'],
+    financials: {
+      revenue: '₹2,460 Cr',
+      profit: '₹304 Cr',
+      debtToEquity: '0.19'
+    },
+    drhpSummary: 'Funds raised for lab automation, new centers, and selected debt repayment.',
+    recommendation: 'Subscribe',
+    sectors: ['Healthcare'],
+    subscriptionBreakup: { retail: 14.4, qib: 31.2, nii: 18.7 }
+  }
+];
+
+export const dashboardMetrics: DashboardMetrics = {
+  activeCount: 3,
+  avgGmp: 76,
+  hottestIpo: 'FinSutra Tech',
+  nextEvent: 'FinSutra Tech closes on 24 Mar'
+};
+
+export const allotmentResults: AllotmentResult[] = [
+  {
+    pan: 'ABCDE1234F',
+    companyName: 'UrbanCart Retail',
+    registrar: 'Link Intime',
+    status: 'Not Allotted',
+    sharesAllotted: 0,
+    lastUpdated: '2026-03-22T08:45:00Z'
+  },
+  {
+    pan: 'AAAPL1234C',
+    companyName: 'UrbanCart Retail',
+    registrar: 'Link Intime',
+    status: 'Allotted',
+    sharesAllotted: 125,
+    lastUpdated: '2026-03-22T08:45:00Z'
+  },
+  {
+    pan: 'AAACT9999Q',
+    companyName: 'FinSutra Tech',
+    registrar: 'KFintech',
+    status: 'Pending',
+    sharesAllotted: 0,
+    lastUpdated: '2026-03-22T08:45:00Z'
+  }
+];
+
+export const notificationPreferences: NotificationPreference[] = [
+  {
+    id: 'open-alert',
+    label: 'IPO opening alerts',
+    enabled: true,
+    description: 'Get a push reminder before subscription starts.'
+  },
+  {
+    id: 'allotment-alert',
+    label: 'Allotment alerts',
+    enabled: true,
+    description: 'Receive instant updates once registrar results are published.'
+  },
+  {
+    id: 'listing-alert',
+    label: 'Listing day alerts',
+    enabled: false,
+    description: 'Track opening price, listing gain, and early momentum.'
+  },
+  {
+    id: 'gmp-alert',
+    label: 'GMP change alerts',
+    enabled: true,
+    description: 'Get notified when premium swings materially.'
+  }
+];
